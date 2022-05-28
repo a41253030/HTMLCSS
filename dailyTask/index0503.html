@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hello"></p>
+    <p id="sayHi"></p>
+    <p id="add"></p>
+    <p id="addTwo"></p>
+    <p id="addNumberAndString"></p>
+
+    <script>
+
+    function hello () {
+        return "Hello world！";
+    }
+    function sayHi(name){
+        return`${name}，Hello world！`;
+    }
+    function add(a){
+        return a+a;
+    }
+    function addTwo(a,b){
+        return a+b;
+    }
+    function addNumberAndString(a,b,c){
+        return`第一加第二個參數加總為 ${a+b}，第三個參數為 ${c}`
+    }
+
+    document.getElementById("hello").innerHTML = hello();
+    document.getElementById("sayHi").innerHTML = sayHi("Tom");
+    document.getElementById("add").innerHTML = add(2);
+    document.getElementById("addTwo").innerHTML = addTwo(5,10);
+    document.getElementById("addNumberAndString").innerHTML = addNumberAndString(5,10,30);
+    </script>
+</body>
+</html>

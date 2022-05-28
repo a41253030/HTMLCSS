@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: PingFang TC, Semibold;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px auto;
+}
+
+.container .header img {
+  width: auto;
+  height: 40px;
+}
+
+.container .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .header .menu a {
+  display: block;
+  padding: 10px 30px;
+  color: #3F5D45;
+  text-decoration: none;
+}
+
+.container .header .menu a img {
+  width: 24px;
+  height: 24px;
+}
+
+.container .banner img {
+  max-width: 940px;
+  height: 496px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main .aside {
+  width: 300px;
+  text-align: center;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.container .main .aside h2 {
+  background: #3F5D45;
+  color: #EAF0ED;
+  line-height: 2.7;
+}
+
+.container .main .aside li {
+  border-bottom: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+  border-left: 1px solid #EAF0ED;
+}
+
+.container .main .aside a {
+  display: block;
+  line-height: 2.7;
+  color: #3F5D45;
+  text-decoration: none;
+}
+
+.container .main .aside a:hover {
+  background: #EAF0ED;
+}
+
+.container .list {
+  width: 620px;
+}
+
+.container .list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .list ul li {
+  position: relative;
+}
+
+.container .list ul li a {
+  display: block;
+  line-height: 2.7;
+  color: #3F5D45;
+  background: #EAF0ED;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container .list ul li .daily {
+  width: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  letter-spacing: 5px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.container .list ul li .heart {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  cursor: pointer;
+}
+
+.container .list ul li .product {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .list ul li .product .product_style {
+  color: #3F5D45;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  line-height: 2.7;
+}
+
+.container .list ul li .product .product_name {
+  width: 173px;
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+  border-bottom: 1px solid #EAF0ED;
+}
+
+.container .list ul li .product .product_price {
+  width: 127px;
+  border-right: 1px solid #EAF0ED;
+  border-bottom: 1px solid #EAF0ED;
+}
+
+.container .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.container .page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .page ul a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  line-height: 60px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
